@@ -5,31 +5,33 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 public class AnimalController {
 
-    private Object fetchAnimalFacts;
+    private Object getAllAnimal;
 
     public AnimalController(){
 
 }
 
 @GetMapping({"/animal"})
-    public String fetchAnimalById(){
+    public String getAllAnimal(){
 
     return "Capybara!!!";
 }
     @GetMapping({"/animal/{id}"})
 
-    public String fetchAnimalFacts(@PathVariable long id)
-    {return fetchAnimalFacts.fakeAnimalFacts(id);}
+    public String getAnimalList(@PathVariable long id)
+    {
+        Object getAnimalList;
+        return getAnimalList.getAnimalList(id);}
 
         switch((int)id)
 
     static {
 
         case 1:
-            String s = "Find the animals!!";
+            String animal = "Find the animals!!";
 
         case 2:
-            String a = "mvjhgvjhgvjhgvjhgvhj";
+            String a = "looking for this?";
 
 
         default:
